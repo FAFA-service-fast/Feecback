@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Service Cards</title>
+    <style>
+        body{
+            background-image: url(back01.png);
+            background-color: rgb(179, 159, 123);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark"style="background-color: rgb(138, 93, 10);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" id="homeLink">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "style="color:white;border-radius: 5px;background-color: #0D6EFD;"  href="javascript:void(0)" id="Tours_Khmer">Tours_Kh</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="javascript:void(0)" id="ផ្សងព្រេង">Adventure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)" id="លក្ខណះគ្រួសារ">Family</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="javascript:void(0)" id="About Us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="javascript:void(0)" id="Contact Us">Contact Us</a>
+              </li>
+              
+              <div class="dropdown">
+                <button class="btn btn-outline-success dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                   <!-- <img style="display: block;justify-content: center;align-items: center;height: 30px;" src="flag_kh.png" alt=""> -->
+                   Language
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                  <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" data-lang="km">ភាសាខ្មែរ(Khmer)</a></li>
+                </ul>
+              </div>
+            </div>
+            </ul>
+            <div class="ms-auto">
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search" id="searchInput">
+              <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">ដំណើរកម្សាន្ត</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">កម្សាន្តតាមខេត្ត</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search" id="searchInput">
+        <button class="btn btn-primary"type="button" id="searchButton">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> -->
+<!-- section2 -->
+<div class="container col" style="background-color: #d4d4d41e;border:  0px solid #d4d4d4;border-radius: 1px;padding: 3px;"> <!-- slide container -->
+    <div class="row">
+      <div class="col-sm-6 ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="box-shadow: 1px 1px 10px 3px #888888;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/451503637_1016584299839040_2591175891523199774_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=teKz8wiunMEQ7kNvgFXGmnq&_nc_ht=scontent-bkk1-1.xx&_nc_gid=ApPjVNV3i0B4qE42DRNmS8F&oh=00_AYBhNWOcMyDdHNkFCOhX4F6fXTcdYMaZTQkKrju7tRQl9Q&oe=66E6FDCC" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451412005_1016584056505731_22879609703928352_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zGnEEJztj-UQ7kNvgG5ki6s&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AAwcy9hKv00dbFDgsXsA3Ey&oh=00_AYDFnPo-S-tjoNtNoGZ0YOQjA6TuEtnpQ0U_MU381L_D8w&oe=66E6F4C3" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451087806_1016584106505726_1235485293941750418_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ugCELlT1NtIQ7kNvgEb9O6k&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AqtZN_Jx7Vewn7t2Hfhc82B&oh=00_AYBhzrMFJeV9SnWE7qT5FQk1pEHd4tT9_NGi0wbm50lv9g&oe=66E6EF89" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src=" https://scontent-bkk1-1.xx.fbcdn.net/v/t1.6435-9/119512170_2769282173303207_6583510339206824835_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=SSfP3tenQ-QQ7kNvgHLZW1R&_nc_ht=scontent-bkk1-1.xx&_nc_gid=Ahe-KOh3_LMfAizTbkjuaUH&oh=00_AYCTMD-B8RAQtKFQ_Wxe4g_seus-_1l4bISzhMOlrVqf6Q&oe=67062A6A" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0skLD8buJXExdRDXPjIFiyEqdv9I6u1WJA&s" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/37/44/13/3744138c49ef83d2b49ad7b511c404a8.jpg " class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src=" https://i.ytimg.com/vi/34KJ6ymSiw4/maxresdefault.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="txt d-flex-column align-items-center justify-content-center" style="border:  1px solid #d4d4d4;height: 100%;"><center>
+            <h1 class="mt-5 fw-bold" style="color: rgb(255, 255, 255);">Tour_Khmer</h1>
+            <h4 style="padding: 15px;text-align: left;color: rgb(75, 72, 72);">Welcome to Tour_kh, your gateway to the enchanting land of Cambodia. Whether you're a history buff, a nature lover, or a culture enthusiast, our carefully curated tours promise an unforgettable experience.</h4>
+            <button  class="btn btn-primary fw-bold" type="button" style="font-size: 25px;width: 250px;"><a href="Product.html" style="text-decoration: none;color: white;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">Let We Go</a></button>
+        </center>
+        </div>
+      </div>
+    </div>
+<!-- Section3 -->
+<div class="container mt-3">
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="productContainer">
+        <!-- Card 1 -->
+        <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ស្មៅទន្លេRiver Grass(ខេត្តកំពង់ចាម)', 'ស្មៅទន្លេ River Grass (ខេត្តកំពង់ចាម) ទៅកំពង់ចាមកំភ្លេច ឈាងចូលផង!អរគុណសន្តិភាព ស្រឡាញ់សន្តិភាព ឈ្មោះ : ស្មៅទន្លេមានសន្តិភាពទើបមានអ្វីៗដល់សព្វថ្ងៃនេះ ខ្ញុំទីតាំង : ភូមិទី៣ សង្កាត់ កំពង់ចាម ក្រុង កំពង់ចាម ខេត្ត កំពង់ចាម', '$70', ['image/01.jpg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhnqs23cCF-sH1SmU12LDdr9-nl8l7BQ8X6Q&s'])">
+                <img src="image/01.jpg" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">ស្មៅទន្លេRiver Grass(ខេត្តកំពង់ចាម)</h5>
+                    <p class="card-text  text text-truncate">ភ្នំណាំលៀ - Phnom Namlyr (ខេត្តមណ្ឌលគិរី) ឡើងដល់កំពូលសិន បានដឹងថាស្អាត!
+                        ភ្នំណាំលៀ - Phnom Namlyr ជាកន្លែងដែលមិនគួររំលង ក្នុង ខេត្តមណ្ឌលគិរី ដែលជាភ្នំដែលនៅគៀកខ្សែរបន្ទាត់ព្រំដែន កម្ពុជា-វៀតណាម”អ្នកធ្វើដំណើរ ត្រូវធ្វើដំណើរកាត់តាមចំការកៅស៊ូ យ៉ាងស្រស់ ត្រកាលតែស្ថានភាពផ្លូវរៀងពិបាកបន្តិចបើសិនជាមានភ្លៀង  DEB La Adventure Cambodia ហ៊ាននិយាយថា ស្អាត ប្លែក ដំបូងគិតថាមិនសូវស្អាតទេ តែដល់ឡើងដល់កំពូលទើបដឹងថា ទេសភាពពិតជាអស្ចារ្យ ដែលអ្នកទេសចរណ៍មិនគួរមើលរំលង ។ #amazingcambodia #លើកស្ទួយទេសចរណ៍ក្នុងស្រុក#DeblaAdventureCambodiaចុចតំណភ្ជាប់នេះ សំរាប់ផែនទីទៅកាន់ភ្នំណាំលៀ</p>
+                    <span class="text-primary">From $70</span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ភ្នំណាំលៀ-(ខេត្តមណ្ឌលគិរី)', 'នំណាំលៀ - Phnom Namlyr (ខេត្តមណ្ឌលគិរី) ឡើងដល់កំពូលសិន បានដឹងថាស្អាត!ភ្នំណាំលៀ - Phnom Namlyr ជាកន្លែងដែលមិនគួររំលង ក្នុង ខេត្តមណ្ឌលគិរី ដែលជាភ្នំដែលនៅគៀកខ្សែរបន្ទាត់ព្រំដែន កម្ពុជា-វៀតណាម”អ្នកធ្វើដំណើរ ត្រូវធ្វើដំណើរកាត់តាមចំការកៅស៊ូ យ៉ាងស្រស់ ត្រកាលតែស្ថានភាពផ្លូវរៀងពិបាកបន្តិចបើសិនជាមានភ្លៀង  DEB La Adventure Cambodia ហ៊ាននិយាយថា ស្អាត ប្លែក ដំបូងគិតថាមិនសូវស្អាតទេ តែដល់ឡើងដល់កំពូលទើបដឹងថា ទេសភាពពិតជាអស្ចារ្យ ដែលអ្នកទេសចរណ៍មិនគួរមើលរំលង ។ #amazingcambodia #លើកស្ទួយទេសចរណ៍ក្នុងស្រុក#DeblaAdventureCambodiaចុចតំណភ្ជាប់នេះ សំរាប់ផែនទីទៅកាន់ភ្នំណាំលៀ', '$70', ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROS5KvvugygozeCNw2xzneGWgn0Ar5BdUnGg&s', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhnqs23cCF-sH1SmU12LDdr9-nl8l7BQ8X6Q&s'])">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROS5KvvugygozeCNw2xzneGWgn0Ar5BdUnGg&s" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">ភ្នំណាំលៀ-(ខេត្តមណ្ឌលគិរី)</h5>
+                    <p class="card-text  text text-truncate">ភ្នំណាំលៀ - Phnom Namlyr (ខេត្តមណ្ឌលគិរី) ឡើងដល់កំពូលសិន បានដឹងថាស្អាត!
+                        ភ្នំណាំលៀ - Phnom Namlyr ជាកន្លែងដែលមិនគួររំលង ក្នុង ខេត្តមណ្ឌលគិរី ដែលជាភ្នំដែលនៅគៀកខ្សែរបន្ទាត់ព្រំដែន កម្ពុជា-វៀតណាម”អ្នកធ្វើដំណើរ ត្រូវធ្វើដំណើរកាត់តាមចំការកៅស៊ូ យ៉ាងស្រស់ ត្រកាលតែស្ថានភាពផ្លូវរៀងពិបាកបន្តិចបើសិនជាមានភ្លៀង  DEB La Adventure Cambodia ហ៊ាននិយាយថា ស្អាត ប្លែក ដំបូងគិតថាមិនសូវស្អាតទេ តែដល់ឡើងដល់កំពូលទើបដឹងថា ទេសភាពពិតជាអស្ចារ្យ ដែលអ្នកទេសចរណ៍មិនគួរមើលរំលង ។ #amazingcambodia #លើកស្ទួយទេសចរណ៍ក្នុងស្រុក#DeblaAdventureCambodiaចុចតំណភ្ជាប់នេះ សំរាប់ផែនទីទៅកាន់ភ្នំណាំលៀ</p>
+                    <span class="text-primary">From $70</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ភ្នំខ្នងព្រះ-(ខេត្តពោធិ៍សាត់)', 'ដំណើរកំសាន្តទៅកាន់តំបន់អេកូទេសចរណ៍ភ្នំខ្នងព្រះ ជាមួយ ដើរ២ - Roaderingតោះ ហៅពួកម៉ាកទៅជាមួយគ្នាថ្ងៃ 27-29 មករា 2023 ដំណើរកំសាន្តទៅកាន់តំបន់អេកូទេសចរណ៍ភ្នំខ្នងព្រះ ស្ថិតនៅជួរភ្នំក្រវ៉ាញ ស្រុកវាលវែង ខេត្តពោធិ៍សាត់ចេញដំណើរ៖ 27-29 មករា 2023តម្លៃ៖ 95$រួមបញ្ចូល៖ការធ្វើដំណើរ អាហារ7ពេល និងទឹកតង់ (គេង2នាក់) អ្នកនាំផ្លូវក្នុងតំបន់ ក្រុមការងារការចូលរួមមូលនិធិសហគមន៍តំណរចុះឈ្មោះ៖ https://forms.gle/XuNWXnFBpWYjJTxk7textសំរាប់ពត៍មានបន្ថែមសូមទំនាក់ទំនង Telegram:086 235 360', '$85', ['https://scontent-bkk1-1.xx.fbcdn.net/v/t1.6435-9/119467900_2769282389969852_2578414671996606381_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=HpljVRQoWj0Q7kNvgEGWWgL&_nc_ht=scontent-bkk1-1.xx&_nc_gid=AQ7QAf_gRY3PcMNixsgW5kN&oh=00_AYBvLlclpDJZ0hayPPS4KyTzmc_8G5K7X-_f1CNj3jZzLg&oe=67064723', 'https://scontent-bkk1-1.xx.fbcdn.net/v/t1.6435-9/119335171_2769282329969858_4310791895479294078_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=O1WoPv5b07QQ7kNvgEG62HY&_nc_ht=scontent-bkk1-1.xx&oh=00_AYCveHk5XCFMRPecZm5LTv0SSJl_38QCO5Ewmpa9Fn8j4w&oe=67061B90', 'https://scontent-bkk1-1.xx.fbcdn.net/v/t1.6435-9/119097773_2769282569969834_3785470745319555565_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=D0rNLShPj90Q7kNvgHRSlrl&_nc_ht=scontent-bkk1-1.xx&_nc_gid=ADy6UldcD5pjPJ3Zs9gIQjO&oh=00_AYCTw6rT9I8IJjcqtw4JBJ6CidhvwyidyX-kGtnxuNYL1Q&oe=67064D46'])">
+                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t1.6435-9/119512170_2769282173303207_6583510339206824835_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=SSfP3tenQ-QQ7kNvgHLZW1R&_nc_ht=scontent-bkk1-1.xx&_nc_gid=Ahe-KOh3_LMfAizTbkjuaUH&oh=00_AYCTMD-B8RAQtKFQ_Wxe4g_seus-_1l4bISzhMOlrVqf6Q&oe=67062A6A" class="card-img-top" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  alt="Service 3">
+                <div class="card-body">
+                    <h5 class="card-title">ភ្នំខ្នងព្រះ-(ខេត្តពោធិ៍សាត់)</h5>
+                    <p class="card-text  text text-truncate">I will create travel tour, flight, hotel booking affiliate website.</p>
+                    <span class="text-primary">From $85</span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ភ្នំខ្នងព្រះ-(ខេត្តពោធិ៍សាត់)', 'តោះ ទៅលេងកោះកុងក្រៅជាមួយ ស្តេចព្រៃ Sdach Prey !ចូលឆ្នាំ អត់ស្រុកទៅ មិនដឹងទៅណា ទៅដើរលេងនៅកោះកុង ក្រៅជាមួយ ស្ដេចព្រៃ Sdach Prey មងទៅ!កោះកុងក្រៅ ពីយានអាកាស ដ្រូន ស្អាតណាស់! Drone View: in Sdach Prey ចូលឆ្នាំដើរលេងកោះកុងក្រៅក្រុមថ្ងៃ 06-07ក្រុមថ្ងៃ 13-15 ចូលឆ្នាំខ្មែរក្រុមថ្ងៃ 14-16 ចូលឆ្នាំខ្មែរក្រុមថ្ងៃ 21-22 មេសា ក្រុមថ្ងៃ 27-28 មេសា 1យប់2ថ្ងៃ តម្លៃ89$ 2យប់3ថ្ងៃ តម្លៃ109$ ផ្តល់ជូន:មធ្យោបាយធ្វើដំនើរពីភ្នំពេញ ទូកខ្នាតធំមិនខ្លាចរលកអមដោយកូនអូប័រ អាហារឆ្ងាញ់ៗបែបអ្នកកោះ ទឹកពិសារតង់សម្រាប់គេង នឹងកម្រាលអេប៉ុង ទូកជូនដើរលេងស្ទួចត្រីមើលផ្កាថ្មដើរលេងឆ្នេរទី៣ ទី៤ ទី6 នឹងភូមិលើកោះអាវឡាតាន់ មានខារ៉ាអូខេសម្រាប់ច្រៀងលើទូក ម៉ាស៊ីនភ្លើងនឹងភ្លើងដេគ័រនៅលើឆ្នេរសម្ភារះចំអិនអាហារ អាំងសាច់មួយកំប្លែ ស្តាយជំនាញផ្នែកសមុទ្រជូនដើរលេងនឹងថតរូបTelegram +85569513505ផ្តល់ជូន៖ ម្ហូបឆ្ងាញ់ៗ ទឹក, តង់, ទូក និងការធ្វើដំណើរ តេលេក្រាមស្ដេចព្រៃ 069513505 / 099607878', '$85', ['https://www.knongsrok.com/wp-content/uploads/2020/06/Untitled-1-6.png', 'https://asset.cambodia.gov.kh/provincial/sites/12/2021/05/B3E2F19A-C5D2-4B49-BD95-FD5D13F43CB5-1024x683.jpeg'])">
+                <img src="https://i.ytimg.com/vi/AuVoEMZpcA0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAKrxxIuzM5hBkhjFKU4FVa8i-h7w" class="card-img-top" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  alt="Service 3">
+                <div class="card-body">
+                    <h5 class="card-title">កោះកុងក្រៅ</h5>
+                    <p class="card-text  text text-truncate">តោះ ទៅលេងកោះកុងក្រៅជាមួយ ស្តេចព្រៃ Sdach Prey !ចូលឆ្នាំ អត់ស្រុកទៅ មិនដឹងទៅណា ទៅដើរលេងនៅកោះកុង ក្រៅជាមួយ ស្ដេចព្រៃ Sdach Prey មងទៅ!កោះកុងក្រៅ ពីយានអាកាស ដ្រូន ស្អាតណាស់! Drone View: in Sdach Prey ចូលឆ្នាំដើរលេងកោះកុងក្រៅក្រុមថ្ងៃ 06-07ក្រុមថ្ងៃ 13-15 ចូលឆ្នាំខ្មែរក្រុមថ្ងៃ 14-16 ចូលឆ្នាំខ្មែរក្រុមថ្ងៃ 21-22 មេសា ក្រុមថ្ងៃ 27-28 មេសា 1យប់2ថ្ងៃ តម្លៃ89$ 2យប់3ថ្ងៃ តម្លៃ109$</p>
+                    <span class="text-primary">From $85</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hidden Product Cards -->
+        <div class="col col-md-3 d-none" id="hiddenProducts1">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ទឹកធ្លាក់អន្លង់ជើងចាប(សៀមរាប)', 'ទឹកធ្លាក់អន្លង់ជើងចាប នៅភ្នំគូលែន (សៀមរាប)  ទឹកធ្លាក់អន្លង់ជើងចាបអ្នកចូលចិត្តបោះតង់នៅសៀមរាបភាគច្រើនប្រហែលជាស្គាល់ហើយកន្លែងនេះ ។', '$200', ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0skLD8buJXExdRDXPjIFiyEqdv9I6u1WJA&s', 'https://refile.tnaot.com/image/2024/02/02/17ac7391db9f4409ae86307b70032438.jpg', 'https://sgp1.digitaloceanspaces.com/newsasiacloud/wp-content/uploads/2024/01/14-98.jpg'])">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0skLD8buJXExdRDXPjIFiyEqdv9I6u1WJA&s" class="card-img-top" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  alt="Hidden Service 1">
+                <div class="card-body">
+                    <h5 class="card-title">ទឹកធ្លាក់អន្លង់ជើងចាប(សៀមរាប)</h5>
+                    <p class="card-text  text text-truncate">This is a hidden service description.</p>
+                    <span class="text-primary">From $200</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col col-md-3 d-none" id="hiddenProducts2" >
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ទឹកជ្រោះចាក់អង្រែ', 'This is another hidden service description.', '$250', ['https://lh3.googleusercontent.com/proxy/6Lim3CsloORRR5YU7eWPu9xFOUIIOnUGbf6gCM1s_ElTI7SbjknIpkVFGkGkz45d6DNy0q5ZiRoDKP4X5X2ho8CnYRQGnLo9Imfo1IEqOsljZnV_Ribwe_ONZd3qEy9pZmN6Vn8nLJjwEwnwpNoL', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdKpRDXXYzh1nFRAfQXkMICNlIb0gPpEoBdg&s', 'https://i.pinimg.com/736x/37/44/13/3744138c49ef83d2b49ad7b511c404a8.jpg'])">
+                <img src="https://i.pinimg.com/736x/37/44/13/3744138c49ef83d2b49ad7b511c404a8.jpg" class="card-img-top" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  alt="Hidden Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">ទឹកជ្រោះចាក់អង្រែ</h5>
+                    <p class="card-text  text text-truncate">This is another hidden service description.</p>
+                    <span class="text-primary">From $250</span>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 d-none" id="hiddenProducts2" >
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('កោះហាន', 'Koh HanLet: trip with Solo Landscapes 06-07th April 2024!Every step together brings more smiles and laughter. Thanks for joining our trip See you Osom Community17 Upcoming trip schedule on 06-07th April 2024 Article and pictures by Chentra and Solo Landscapes', '$250', ['https://cambodiapropertyreport.com//storage/posts/February2023/180.jpg', 'https://cambodiapropertyreport.com//storage/posts/February2023/58.jpg', 'https://2.bp.blogspot.com/--I0c5-LJhpk/XgHFKaBsKlI/AAAAAAAAbHA/nrEcRYDcjOEr3rc14MQHExPFlU8rb0yogCLcBGAsYHQ/s1600/IMG_0070.PNG'])">
+                <img src="https://i.ytimg.com/vi/34KJ6ymSiw4/maxresdefault.jpg" class="card-img-top" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  alt="Hidden Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">កោះហាន</h5>
+                    <p class="card-text  text text-truncate">Koh HanLet: trip with Solo Landscapes 06-07th April 2024!Every step together brings more smiles and laughter.</p>
+                    <span class="text-primary">From $250</span>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 d-none" id="hiddenProducts3" >
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('កោះម្នាស់', 'Pine Apple IslandLet: trip with Solo Landscapes on 06th-07th April 2024!', '$250', ['https://ezstatic1.ezweb.online/ezweb_2157/soem-panha/tourism/1024x614.jpg', 'https://ezstatic1.ezweb.online/ezweb_2157/soem-panha/tourism/85224688-171089040975418-7019145918049943552-n.jpg', 'https://asset.cambodia.gov.kh/provincial/sites/12/2022/05/IMG_20220519_083748_268-1024x576.jpg'])">
+                <img src="https://i.ytimg.com/vi/Tw-0ME8MnZs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCPANI4Zr433xfKyKztoH5_x6322g" class="card-img-top" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  alt="Hidden Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">កោះម្នាស់</h5>
+                    <p class="card-text  text text-truncate">Pine Apple IslandLet's trip with Solo Landscapes on 06th-07th April 2024!</p>
+                    <span class="text-primary">From $250</span>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 d-none" id="hiddenProducts4" >
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('Destination3', 'Destination3: Things to do at Chipat(កោះកុង)Join trip with Solo LandscapesA small community located in Koh Kong province and mainland South East Asia`s largest remaining tract of rainforest situated directly in the heart of the Cardamom Mountains. There is much fascinating nature including mountains, waterfalls, rivers, evergreen forests, lowland swamps, Malaluka swamps, and mangrove forests.We will have schedule every weekend next month, Booking now', '$250', ['https://i.ytimg.com/vi/IrSxPTzbArE/maxresdefault.jpg', 'https://le-cambodge-autrement.com/images/0-0.attractions/15-chi-phat-cambodia-.JPG', 'http://ndm-travel.com/images/contents/1_29.png'])">
+                <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/06/28/6b93fef0fd57c40c06a1d98f85a4c2e9_1000x1000.jpg" class="card-img-top" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  alt="Hidden Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">Destination3</h5>
+                    <p class="card-text  text text-truncate">Destination3: Things to do at Chipat(កោះកុង)Join trip with Solo LandscapesA small community located in Koh Kong province and mainland South East Asia's largest remaining tract of rainforest situated directly in the heart of the Cardamom Mountains. There is much fascinating nature including mountains, waterfalls, rivers, evergreen forests, lowland swamps, Malaluka swamps, and mangrove forests.We will have schedule every weekend next month, Booking now</p>
+                    <span class="text-primary">From $250</span>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 d-none" id="hiddenProducts5" >
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('អារ៉ែងខេមភីង', 'ទៅដើរលេង អារ៉ែងខេមភីង ជាមួយ ដើរ២ - Roaderingចេញដំណើរ៖ 12-13 សីហា 2023អារ៉ែងខេមភីង ជាតំបន់ទាក់ទាញខ្លាំងមួយនៅក្នុងតំបន់ព្រៃពណ៍ បៃតងនៃតំបន់អារ៉ែង។ចុះឈ្មោះតាមតំណរខាងក្រោម៖https://forms.gle/ju6ja4qQn7HhGAy87តម្លៃ៖ 89ដុល្លារ/ម្នាក់ √ ការធ្វើដំណើរទៅមកតាមឡាន √ ការធ្វើដំណើរតាមទូក/ អាហារ4ពេល និងភេសជ្ជៈ♦ ការស្នាក់នៅតង់ (1គេង2នាក់)/ មគ្គទេសន៍ក្នុងតំបន់ និងក្រុមការងារ / ការកំសាន្តផ្សេងៗ...។ពត៍មានបន្ថែមសូមទំនាក់ទំនង 086 235 360', '$250', ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrGqiUSgoccOEqr32T5pkw2grMstKmrdOWVzX4lcmWhB8YZUDDn7n2ez4xZ3R5VYufqFk&usqp=CAU', 'https://cdn.prod.website-files.com/6645c4efb6c65d9864807fc9/66c867cab0615f41cfc10802_66c866b1ba799c59a9405197_450089170_977227267746775_4321451702728962026_n.jpeg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFejT3bGIvzZy5zikyHMmTVeShxVQmrnjKFlTbhfgUYynBcS3zRsgzX3uy0uGt2_XqzI0&usqp=CAU','https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451087806_1016584106505726_1235485293941750418_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ugCELlT1NtIQ7kNvgEb9O6k&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AqtZN_Jx7Vewn7t2Hfhc82B&oh=00_AYBhzrMFJeV9SnWE7qT5FQk1pEHd4tT9_NGi0wbm50lv9g&oe=66E6EF89','https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451010298_1016584159839054_3901633987510858966_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=CLY4tNzDWyIQ7kNvgEuva-c&_nc_ht=scontent-bkk1-2.xx&oh=00_AYC-9Ks2HBvjQLWkUAFwNbVQuCCitRFcSisBqF3dUB8OFQ&oe=66E70E12','https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/451190667_1016584199839050_5908596283171088313_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XYkpkk8PM5MQ7kNvgGZQrIm&_nc_ht=scontent-bkk1-1.xx&_nc_gid=AqVRIYDODePkV5qIJ3IJ-Hk&oh=00_AYDVO-k2kKwT-5lgrgpf6aQ39Su50ovBPcWKzOb8PkS6FA&oe=66E6E11E','https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451207577_1016584223172381_2687872052572627840_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dPUlzghY2JsQ7kNvgHCuLbc&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AZ6nszcSfj3H7qAF-4pQgAJ&oh=00_AYCld5BnumRJwMK94vXrPLyuOGdN8p8_5gKl5LoKV017ZQ&oe=66E6DBA5','https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451655445_1016584269839043_1086981113039267894_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=m7QwmB511-AQ7kNvgGRQEac&_nc_ht=scontent-bkk1-2.xx&_nc_gid=A701S0K2c1CQ0xJvri1Dkyt&oh=00_AYBp-itR3YsMlL2bE8fy0gQ0pveqNBzQlwdgiK5iJyseVQ&oe=66E6FDE0','https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/451503637_1016584299839040_2591175891523199774_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=teKz8wiunMEQ7kNvgFXGmnq&_nc_ht=scontent-bkk1-1.xx&_nc_gid=ApPjVNV3i0B4qE42DRNmS8F&oh=00_AYBhNWOcMyDdHNkFCOhX4F6fXTcdYMaZTQkKrju7tRQl9Q&oe=66E6FDCC'])">
+                <img src="https://cdn.prod.website-files.com/6645c4efb6c65d9864807fc9/66c866393c4302058238bb48_1.jpg" class="card-img-top" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  alt="Hidden Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">អារ៉ែងខេមភីង</h5>
+                    <p class="card-text  text text-truncate">ទៅដើរលេង អារ៉ែងខេមភីង ជាមួយ ដើរ២ - Roaderingចេញដំណើរ៖ 12-13 សីហា 2023អារ៉ែងខេមភីង ជាតំបន់ទាក់ទាញខ្លាំងមួយនៅក្នុងតំបន់ព្រៃពណ៍ បៃតងនៃតំបន់អារ៉ែង។ចុះឈ្មោះតាមតំណរខាងក្រោម៖https://forms.gle/ju6ja4qQn7HhGAy87តម្លៃ៖ 89ដុល្លារ/ម្នាក់ √ ការធ្វើដំណើរទៅមកតាមឡាន √ ការធ្វើដំណើរតាមទូក/ អាហារ4ពេល និងភេសជ្ជៈ♦ ការស្នាក់នៅតង់ (1គេង2នាក់)/ មគ្គទេសន៍ក្នុងតំបន់ និងក្រុមការងារ / ការកំសាន្តផ្សេងៗ...។ពត៍មានបន្ថែមសូមទំនាក់ទំនង 086 235 360</p>
+                    <span class="text-primary">From $250</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-info mt-3" id="showMoreBtn" onclick="toggleProductVisibility()">Show More</button>
+</div>
+
+<!-- Modal for Service Details -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Service Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselImages" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="carouselItems"></div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselImages" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <h5 id="serviceTitle"></h5>
+                <p id="serviceDescription"></p>
+                <span id="servicePrice" class="text-primary"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paymentModal" onclick="preparePayment()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Payment -->
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content w-70" >
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentModalLabel">Payment Method</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="paymentDetails" class="fw-bold"></p>
+                <div class="mb-4">
+                    <h6>Select Your Payment Method:</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal" checked onclick="togglePaymentForm()">
+                        <label class="form-check-label" for="paypal">PayPal</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" onclick="togglePaymentForm()">
+                        <label class="form-check-label" for="creditCard">Visa/MasterCard</label>
+                    </div>
+                </div>
+                
+                <div id="paypalInfo" class="payment-info">
+                    <p>Redirecting to PayPal for payment.</p>
+                </div>
+
+                <div id="creditCardInfo" class="payment-info d-none">
+                    <h6 class="mt-4">Credit Card Information</h6>
+                    <div class="mb-3">
+                        <label for="creditCardNumber" class="form-label">Credit Card Number</label>
+                        <input type="text" class="form-control" id="creditCardNumber" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="expiration" class="form-label">Expiration Date</label>
+                                <input type="text" class="form-control" id="expiration" placeholder="MM/YY" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="cvc" class="form-label">CVC</label>
+                                <input type="text" class="form-control" id="cvc" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="button" class="btn btn-success mt-3" onclick="submitPayment()">Submit Payment</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Invoice -->
+<div class="modal fade" id="invoiceModal" tabindex="-1" aria-labelledby="invoiceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="invoiceModalLabel">Invoice</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 id="invoiceServiceTitle"></h6>
+                <p id="invoiceServiceDescription"></p>
+                <p id="invoiceAmount" class="fw-bold"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container col" style="background-color: #d4d4d41e;border:  0px solid #d4d4d4;border-radius: 1px;padding: 3px;"> <!-- slide container -->
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="txt d-flex-column align-items-center justify-content-center" style="border:  1px solid #d4d4d4;height: 100%;"><center>
+                <h1 class="mt-5 fw-bold" style="color: rgb(255, 255, 255);">Tour_Khmer</h1>
+                <h4 style="padding: 15px;text-align: left;color: rgb(75, 72, 72);">Welcome to Tour_kh, your gateway to the enchanting land of Cambodia. Whether you're a history buff, a nature lover, or a culture enthusiast, our carefully curated tours promise an unforgettable experience.</h4>
+                <button  class="btn btn-primary fw-bold" type="button" style="font-size: 25px;width: 250px;"><a href="Product.html" style="text-decoration: none;color: white;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">Let We Go</a></button>
+            </center>
+            </div>
+          </div>
+      <div class="col-sm-6 ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="box-shadow: 1px 1px 10px 3px #888888;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/451503637_1016584299839040_2591175891523199774_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=teKz8wiunMEQ7kNvgFXGmnq&_nc_ht=scontent-bkk1-1.xx&_nc_gid=ApPjVNV3i0B4qE42DRNmS8F&oh=00_AYBhNWOcMyDdHNkFCOhX4F6fXTcdYMaZTQkKrju7tRQl9Q&oe=66E6FDCC" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451412005_1016584056505731_22879609703928352_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zGnEEJztj-UQ7kNvgG5ki6s&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AAwcy9hKv00dbFDgsXsA3Ey&oh=00_AYDFnPo-S-tjoNtNoGZ0YOQjA6TuEtnpQ0U_MU381L_D8w&oe=66E6F4C3" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451087806_1016584106505726_1235485293941750418_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ugCELlT1NtIQ7kNvgEb9O6k&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AqtZN_Jx7Vewn7t2Hfhc82B&oh=00_AYBhzrMFJeV9SnWE7qT5FQk1pEHd4tT9_NGi0wbm50lv9g&oe=66E6EF89" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src=" https://scontent-bkk1-1.xx.fbcdn.net/v/t1.6435-9/119512170_2769282173303207_6583510339206824835_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=SSfP3tenQ-QQ7kNvgHLZW1R&_nc_ht=scontent-bkk1-1.xx&_nc_gid=Ahe-KOh3_LMfAizTbkjuaUH&oh=00_AYCTMD-B8RAQtKFQ_Wxe4g_seus-_1l4bISzhMOlrVqf6Q&oe=67062A6A" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0skLD8buJXExdRDXPjIFiyEqdv9I6u1WJA&s" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/37/44/13/3744138c49ef83d2b49ad7b511c404a8.jpg " class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src=" https://i.ytimg.com/vi/34KJ6ymSiw4/maxresdefault.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+    </div>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center mt-4 py-3">
+    <div class="container">
+        <p class="mb-0">© 2023 Alpha01.Com.</p>
+        <ul class="list-inline mt-2">
+            <li class="list-inline-item">
+                <a href="#" class="text-white">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-white">Terms of Service</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-white">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function loadCardDetails(title, description, price, images) {
+        // Set the service details
+        document.getElementById('serviceTitle').innerText = title;
+        document.getElementById('serviceDescription').innerText = description;
+        document.getElementById('servicePrice').innerText = "Price: " + price;
+
+        // Set the carousel images
+        const carouselItems = document.getElementById('carouselItems');
+        carouselItems.innerHTML = ""; // Clear previous images
+        images.forEach((image, index) => {
+            const isActive = index === 0 ? 'active' : '';
+            carouselItems.innerHTML += `
+                <div class="carousel-item ratio ratio-16x9 ${isActive}">
+                    <img src="${image}" class="d-block w-100 bg-cover bg-no-repeat" alt="${title}" style="height: 400px; object-fit: cover;background-size:cover;width:100%;" />
+                </div>
+            `;
+        });
+    }
+
+    function preparePayment() {
+        const price = document.getElementById('servicePrice').innerText;
+        document.getElementById('paymentDetails').innerText = `You have selected a service costing ${price}.`;
+        togglePaymentForm(); // Show appropriate payment form
+    }
+    function togglePaymentForm() {
+        const selectedMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
+        const paypalInfo = document.getElementById('paypalInfo');
+        const creditCardInfo = document.getElementById('creditCardInfo');
+
+        if (selectedMethod === 'paypal') {
+            paypalInfo.classList.remove('d-none');
+            creditCardInfo.classList.add('d-none');
+        } else {
+            paypalInfo.classList.add('d-none');
+            creditCardInfo.classList.remove('d-none');
+        }
+    }
+    function submitPayment() {
+        const title = document.getElementById('serviceTitle').innerText;
+        const description = document.getElementById('serviceDescription').innerText;
+        const price = document.getElementById('servicePrice').innerText;
+
+        // Populate invoice details
+        document.getElementById('invoiceServiceTitle').innerText = title;
+        document.getElementById('invoiceServiceDescription').innerText = description;
+        document.getElementById('invoiceAmount').innerText = price;
+
+        // Show invoice modal
+        const invoiceModal = new bootstrap.Modal(document.getElementById('invoiceModal'));
+        invoiceModal.show();
+
+        // Optionally, hide the payment modal
+        const paymentModal = bootstrap.Modal.getInstance(document.getElementById('paymentModal'));
+        paymentModal.hide();
+    }
+
+    function toggleProductVisibility() {
+        const hiddenProducts = document.querySelectorAll(".d-none");
+        hiddenProducts.forEach(product => product.classList.toggle("d-none"));
+        const showMoreBtn = document.getElementById("showMoreBtn");
+        showMoreBtn.innerText = hiddenProducts[0].classList.contains("d-none") ? "Show More" : "Show Less";
+    }
+</script>
+<script>
+    document.getElementById('searchButton').addEventListener('click', function() {
+    const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.col');
+
+    cards.forEach(card => {
+        const cardTitle = card.querySelector('.card-title').innerText.toLowerCase();
+        const cardText = card.querySelector('.card-text').innerText.toLowerCase();
+
+        if (cardTitle.includes(searchQuery) || cardText.includes(searchQuery)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>
