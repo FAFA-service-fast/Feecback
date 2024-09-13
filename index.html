@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Service Cards</title>
     <style>
-        body{
-            background-image: url(back01.png);
-            background-color: rgb(179, 159, 123);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-    </style>
+      body{
+          background-image: url(back01.png);
+          background-color: rgb(115, 92, 50);
+          background-size: cover;
+          background-repeat: no-repeat;
+      }
+  </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: rgb(138, 93, 10);">
+    <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: rgba(138, 93, 10, 0.726);;padding: 0;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+          <a class="navbar-brand" href="javascript:void(0)" style="width: 150px;"><img src="logo.png" alt="logo" style="width: 100%;height: 100%;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,23 +30,20 @@
                 <a class="nav-link btn btn-primary"style="color:white;border-radius: 5px;background-color: #0D6EFD;"  href="javascript:void(0)" id="homeLink">Home</a>
               </li>
               <li class="nav-item "style="border-radius: 5px;">
-                <a class="nav-link "href="Product.html" id="Tours_Khmer">Tours_Kh</a>
+                <a class="nav-link "href="Tour.html" id="Tours_Khmer">Tours_Kh</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"href="javascript:void(0)" id="ផ្សងព្រេង">Adventure</a>
+                <a class="nav-link"href="Advanture.html" id="Adventure">Adventure</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"href="javascript:void(0)" id="លក្ខណះគ្រួសារ">Family</a>
+                <a class="nav-link"href="About.html" id="About Us">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"href="javascript:void(0)" id="About Us">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"href="javascript:void(0)" id="Contact Us">Contact Us</a>
+                <a class="nav-link scroll-behavior: smooth;"href="contact.html" id="Contact Us">Contact Us</a>
               </li>
               
               <div class="dropdown">
-                <button class="btn btn-outline-success dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                    <!-- <img style="display: block;justify-content: center;align-items: center;height: 30px;" src="flag_kh.png" alt=""> -->
                    Language
                 </button>
@@ -61,16 +61,17 @@
             </form>
           </div>
         </div>
-      </nav>
+      </nav><br><br><br>
 <!-- section1 -->
 <div class="container col" style="background-color: #d4d4d41e;border:  0px solid #d4d4d4;border-radius: 1px;padding: 3px;">
     <div class="row">
-      <div class="col-sm-6">
-        <div class="txt d-flex-column align-items-center justify-content-center" style="border:  1px solid #d4d4d4;height: 100%;"><center>
-            <h1 class="mt-5 fw-bold" style="color: rgb(255, 255, 255);">Tour_Khmer</h1>
-            <h4 style="padding: 15px;text-align: left;color: rgb(75, 72, 72);">Welcome to Tour_kh, your gateway to the enchanting land of Cambodia. Whether you're a history buff, a nature lover, or a culture enthusiast, our carefully curated tours promise an unforgettable experience.</h4>
-            <button  class="btn btn-primary fw-bold" type="button" style="font-size: 25px;width: 250px;"><a href="Product.html" style="text-decoration: none;color: white;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">Let We Go</a></button>
-        </center>
+      <div class="col-sm-6"​>
+        <div class="txt d-flex-column align-items-center justify-content-center p-2 p-lg-0" style="background-color: rgba(135, 207, 235, 0.158);border:  1px solid #d4d4d4;height: 100%;border-radius: 3px;"><center>
+            <h1 class="mt-5 fw-bold" style="color: rgb(255, 255, 255);font-family: Oswald;">Tour_Khmer</h1>
+            <h4 style="padding: 15px;;color: rgb(75, 72, 72);font-family: Oswald;">Welcome to Tour_kh, your gateway to the enchanting land of Cambodia. Whether you're a history buff, a nature lover, or a culture enthusiast, our carefully curated tours promise an unforgettable experience.</h4>
+            <button  class="btn btn-primary btn-sm fs-6 text-uppercase d-none d-md-block" type="button" ><a href="Tour.html" style="text-decoration: none;color: white;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">Let We Go</a></button>
+          </center>
+          <button  class="btn btn-primary btn-sm fs-6 text-uppercase d-block d-md-none" type="button" ><a href="Tour.html" style="text-decoration: none;color: white;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">Let We Go</a></button>
         </div>
       </div>
       <div class="col-sm-6 ">
@@ -80,29 +81,25 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="border-radius: 3px;">
               <div class="carousel-item active">
-                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/451503637_1016584299839040_2591175891523199774_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=teKz8wiunMEQ7kNvgFXGmnq&_nc_ht=scontent-bkk1-1.xx&_nc_gid=ApPjVNV3i0B4qE42DRNmS8F&oh=00_AYBhNWOcMyDdHNkFCOhX4F6fXTcdYMaZTQkKrju7tRQl9Q&oe=66E6FDCC" class="d-block w-100" alt="...">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Angkor_Wat_Temple.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451412005_1016584056505731_22879609703928352_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zGnEEJztj-UQ7kNvgG5ki6s&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AAwcy9hKv00dbFDgsXsA3Ey&oh=00_AYDFnPo-S-tjoNtNoGZ0YOQjA6TuEtnpQ0U_MU381L_D8w&oe=66E6F4C3" class="d-block w-100" alt="...">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMt11hNy9yeWlq4ST2QN89NzDBWaXWLehPP4ZELBJUr_2HqcSY_oo7w0Xt9a_STRL2iAkb1PVafYfEQf087nOalJ1FkW7STNNFV_LF5723N_BF7yfSw_xQ4LyDFdiEnrajnn-XC_z5TNDYYQIOZWZ5ZT42lfa-xci98-GBtb5IktyHALGocj4pfBP4hyphenhyphen0/s2048/434583062_904642138123869_281953733428079476_n.jpg " class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451087806_1016584106505726_1235485293941750418_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ugCELlT1NtIQ7kNvgEb9O6k&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AqtZN_Jx7Vewn7t2Hfhc82B&oh=00_AYBhzrMFJeV9SnWE7qT5FQk1pEHd4tT9_NGi0wbm50lv9g&oe=66E6EF89" class="d-block w-100" alt="...">
+                <img src=" https://scontent-bkk1-2.xx.fbcdn.net/v/t1.6435-9/49575841_744615669228981_5742956472636014592_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=rqPshm70QG8Q7kNvgFaWScR&_nc_ht=scontent-bkk1-2.xx&oh=00_AYB_4P79CoCS11LXG4hSJuXVF1KAH1yIxLtTfxLYf-F4qw&oe=6708CE7F" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src=" https://scontent-bkk1-1.xx.fbcdn.net/v/t1.6435-9/119512170_2769282173303207_6583510339206824835_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=SSfP3tenQ-QQ7kNvgHLZW1R&_nc_ht=scontent-bkk1-1.xx&_nc_gid=Ahe-KOh3_LMfAizTbkjuaUH&oh=00_AYCTMD-B8RAQtKFQ_Wxe4g_seus-_1l4bISzhMOlrVqf6Q&oe=67062A6A" class="d-block w-100" alt="...">
+                <img src="https://cambodiapropertyreport.com//storage/posts/January2022/FotoJet1.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0skLD8buJXExdRDXPjIFiyEqdv9I6u1WJA&s" class="d-block w-100" alt="...">
+                <img src="https://www.oknha.news/wp-content/uploads/2024/03/10-1.jpg " class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="https://i.pinimg.com/736x/37/44/13/3744138c49ef83d2b49ad7b511c404a8.jpg " class="d-block w-100" alt="...">
+                <img src=" https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/453049134_944123717726948_5908092909840065343_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=vnbaQHi0iVYQ7kNvgHUFvjT&_nc_ht=scontent-bkk1-2.xx&_nc_gid=A829SmrV5akXo3jrNrOUmAp&oh=00_AYCebt-ojRsYLx_jKb9dkLH0nGaBslmiX3zoeJNAom61rw&oe=66E723E4" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
-                <img src=" https://i.ytimg.com/vi/34KJ6ymSiw4/maxresdefault.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
@@ -114,24 +111,13 @@
           </div>
       </div>
     </div>
-<!-- section2 -->
-<div class="container col">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="txt d-flex-column align-items-center justify-content-center mt-5"><center>
-            <h3 class="mt-5 fw-bold" style="color: rgb(255, 255, 255);">Our Services</h3><br>
-            <h4 style="padding: 15px;text-align: left;color: rgb(75, 72, 72);">We offer a wide range of tour packages to suit all budgets and preferences. Whether you're looking for a weekend getaway or a longer stay, we can provide you with the perfect experience.</h4>
-        </center>
-        </div>
-      </div>
-    </div>
-<!-- fluendservices -->
+
     <!-- Section 2 -->
     <div class="container col mt-5">
       <div class="row">
           <div class="col-sm-12">
               <div class="text-center text-white">
-                  <h3 class="fw-bold">Our Services</h3>
+                  <h3 class="fw-bold"style="color: red;font-size: 20px;">Our Services</h3>
                   <h4 class="p-3" style="color: rgb(75, 72, 72);;">We offer a wide range of tour packages to suit all budgets and preferences. Whether you're looking for a weekend getaway or a longer stay, we can provide you with the perfect experience.</h4>
               </div>
           </div>
@@ -139,24 +125,24 @@
       <!-- Team Section -->
       <div class="row mt-4">
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card">
+          <div class="card mb-2">
             <div class="card-body">
             <div class="d-flex justify-content-center align-items-center">
               <div class="ratio ratio-1x1 w-50 h-50 "><img  src="maker02.jpg"style="border-radius: 50%;" alt="Marketing" class="profile-pic"></div>
             </div>
               <div class="card-body text-center">
                 <h4>Mr.Sopheap</h4>
-                  <h6 class="card-title">Founder</h6>
+                  <h6 class="card-title">Guide Supporter</h6>
                   <p class="card-text">Creates strategies to promote the brand and its products.</p>
               </div>
             </div>
           </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card">
+            <div class="card mb-2">
               <div class="card-body">
               <div class="d-flex justify-content-center align-items-center">
-                <div class="ratio ratio-1x1 w-50 h-50 "><img  src="maker1.JPG"style="border-radius: 50%;" alt="Marketing" class="profile-pic"></div>
+                <div class="ratio ratio-1x1 w-50 h-50 "><img  src="maker02.jpg"style="border-radius: 50%;" alt="Marketing" class="profile-pic"></div>
               </div>
 
                 <div class="card-body text-center">
@@ -168,7 +154,7 @@
             </div>
         </div>
           <div class="col-lg-4 col-md-6 col-sm-12 ">
-              <div class="card">
+              <div class="card mb-2">
                 <div class="card-body">
                   <div class="d-flex justify-content-center align-items-center">
                     <div class="ratio ratio-1x1 w-50 h-50 "><img src="001.jpg"style="border-radius: 50%;" alt="Marketing" class="profile-pic"></div>
@@ -184,7 +170,7 @@
       </div>
   </div>
 <!-- Footer -->
-<footer class="bg-dark text-white text-center mt-5 py-3">
+<footer class="container bg-dark text-white text-center mt-5 py-3" style="padding: 0;">
     <div class="container">
         <p class="mb-0">© 2023 Alpha01.Com.</p>
         <ul class="list-inline mt-2">
